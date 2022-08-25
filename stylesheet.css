@@ -1,0 +1,331 @@
+fieldset.fieldset-bordered {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.fieldset-bordered {
+    font-size: 1em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:inherit; /* Or auto */
+    padding:0 10px; /* To give a bit of padding on the left and right */
+    border-bottom:none;	
+}
+
+.err_msg {
+	text-align: center !important;
+	color: red;
+}
+
+.ui-datepicker {
+	background-color: white;
+}
+
+.myconnav {
+	background-color: #82B9D1;
+}
+
+.list {
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 1px solid #DDDDDD;
+	border-left: 1px solid #DDDDDD;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.list td {
+	border-right: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+.list thead td {
+	background-color: #252525;/*#EFEFEF;*/
+	padding: 10px 5px 10px 5px;
+	border-top-color: #000000;
+	border-bottom-color: #000000;
+	color: #000000;
+}
+.list thead td a, .list thead td {
+	text-decoration: none;
+	color: #4BB8B2;
+	font-weight: bold;
+}
+.list tbody td a {
+	color: #ffffff;
+}
+.list tbody td {
+	vertical-align: middle;
+	padding: 10px 5px 10px 5px;
+	background: #EFEFEF;
+}
+.list .left {
+	text-align: left;
+	padding: 7px;
+}
+.list .right {
+	text-align: right;
+	padding: 7px;
+}
+.list .center {
+	text-align: center;
+	padding: 7px;
+}
+.list .asc {
+	padding-right: 15px;
+	background: url('../image/asc.png') right center no-repeat;
+}
+.list .desc {
+	padding-right: 15px;
+	background: url('../image/desc.png') right center no-repeat;
+}
+.list .filter td {
+	padding: 5px;
+	background: #E7EFEF;
+}
+
+.list {
+  overflow: auto;
+  white-space:nowrap;
+  width:100%;
+}
+
+.pagination {
+	border-top: 1px solid #DDDDDD;
+	display: inline-block;
+	width: 100%;
+	padding-top: 6px;
+}
+.pagination .links {
+	float: left;
+	padding-top: 6px;
+}
+.pagination .links a {
+	border: 1px solid #DDDDDD;
+	padding: 4px 10px;
+	font-size: 12px;
+	text-decoration: none;
+	color: #A3A3A3;
+}
+.pagination .links b {
+	border: 1px solid #269BC6;
+	padding: 4px 10px;
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #269BC6;
+	background: #FFFFFF;
+}
+.pagination .results {
+	float: right;
+	padding-top: 6px;
+	font-size: 12px;
+}
+
+@media only screen and (max-width: 800px) {
+	
+	/* Force table to not be like tables anymore */
+	#no-more-tables table, 
+	#no-more-tables thead, 
+	#no-more-tables tbody, 
+	#no-more-tables th, 
+	#no-more-tables td, 
+	#no-more-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#no-more-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#no-more-tables tr { border: 1px solid #ccc; }
+ 
+	#no-more-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+		white-space: normal;
+		text-align:left;
+	}
+ 
+	#no-more-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+		text-align:left;
+		font-weight: bold;
+	}
+ 
+	/*
+	Label the data
+	*/
+	#no-more-tables td:before { content: attr(data-title); }
+}
+
+.cal_date {
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  background: #82B9D1;
+}
+
+.cal_date_present {
+  border: 1px solid;
+  width: 30px;
+  height: 30px;
+  float: right;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
+  background: #F2A416;
+}
+
+.calendar-td {
+ height: 120px !important;
+ width: 150px !important;
+}
+
+.calendar-tr {
+ height: 120px !important;
+}
+
+.cal_link_my_approval {
+	color: #337ab7 !important;
+}
+
+.btn-pending {
+	background-color: red;
+}
+
+.btn-approved {
+	background-color: green;
+	border: 1px solid black;
+}
+
+.header_box {
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: #2495A1;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+.footer_box {
+	margin-left: -15px;
+	margin-right: -15px;
+	background-color: #4A9DFD;
+	padding: 10px;
+	color: #FFFFFF;
+}
+
+.footer_box a {
+	color: #FFFFFF;
+	font-style: italic;
+}
+
+.downline_link {
+	color: orange;
+}
+
+.products {
+	border: 1px solid #333;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+	padding: 16px;
+	margin-bottom: 20px;
+	
+}
+
+.white-color {
+	color: #ffffff;
+}
+
+.form-box {
+	padding: 50px;
+}
+
+.hidden {
+    display: none!important;
+}
+
+.col-sm-3e, 
+.col-xs-3e {
+	width: 16.66%;
+}
+
+.col-sm-6e, 
+.col-xs-6e {
+	width: 66.66%;
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+	.homeform {
+		background-image: url(image/homeformsmall.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.homeform {
+		background-image: url(image/homeform.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	.homeform {
+		background-image: url(image/homeform.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+	}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.homeform {
+		background-image: url(image/homeform.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 650px;
+	}
+}
+
+.registration {
+	background-color: #010101;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 650px;
+}

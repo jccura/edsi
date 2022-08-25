@@ -1,0 +1,4 @@
+*.zip
+*.txt
+.DS_Store
+system/logs/error.txt
